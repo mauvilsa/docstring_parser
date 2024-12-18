@@ -42,6 +42,11 @@ pre-commit = {version = ">=2.16.0", python = ">=3.9"}
 pytest = "*"
 pydoctor = ">=22.3.0"
 
+# Workaround from https://github.com/python-poetry/poetry/issues/9293#issuecomment-2048205226
+[[tool.poetry.source]]
+name = "pypi-public"
+url = "https://pypi.org/simple/"
+
 [tool.black]
 line-length = 79
 py36 = true
